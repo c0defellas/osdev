@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/c0defellas/osdev.svg?branch=add-custom-bootloader-example)](https://travis-ci.org/c0defellas/osdev)
+
 # OSDEV group
 
 The idea of this project is concentrate tools, documentations, design
