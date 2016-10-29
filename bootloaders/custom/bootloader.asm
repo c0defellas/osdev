@@ -15,7 +15,6 @@
 	ETRYAGAIN db "Error reading disk... try again.", 13, 10, 0
 
 	OS_MAGIC db 1, 3, 3, 7
-
 	OS_SKIPHDR equ 0004h
 
 	;;       common routines
