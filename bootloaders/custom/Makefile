@@ -1,24 +1,26 @@
 .PHONY: build debug gdb
 
 NASHURL = "https://github.com/NeowayLabs/nash/releases/download/v0.1.3-beta/nash"
+NASHBIN = ./vendor/bin/nash
 
 all: deps build
 
-deps: /usr/bin/nash
+deps: $(NASHBIN)
 
-/usr/bin/nash:
-	sudo wget -c $(NASHURL) -O /usr/bin/nash
-	sudo chmod +x /usr/bin/nash
-	nash -version
+$(NASHBIN):
+	mkdir -p ./vendor/bin
+	wget -c $(NASHURL) -O $(NASHBIN)
+	chmod +x $(NASHBIN)
+	$(NASHBIN) -version
 
 build:
-	./make.sh
+	$(NASHBIN) ./make.sh
 
 test:
-	./make.sh test
+	$(NASHBIN) ./make.sh test
 
 debug:
-	./make.sh debug-start-vm
+	$(NASHBIN) ./make.sh debug-start-vm
 
 gdb:
-	./make.sh debug-gdb
+	$(NASHBIN) ./make.sh debug-gdb
