@@ -1,7 +1,8 @@
+sudo: required
 language: go
 
 before_install:
-  - apt-get install nasm gcc
+  - sudo apt-get install nasm
 
 go:
   - 1.7
