@@ -5,6 +5,8 @@ IFS = ()
 # working directory
 wdir <= pwd | tr -d "\n"
 
+dd --version
+
 IFS            = ()
 ASFLAGS        = ("-fbin")
 BOOTLOADER_SRC = "bootloader.asm"
