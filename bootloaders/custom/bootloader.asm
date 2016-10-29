@@ -1,5 +1,5 @@
 	;;--------------------------------------
-	;;    EnzOS bootloader
+	;;    Custom bootloader
 	;;--------------------------------------
 	[BITS 16]
 	[ORG  0x7c00]
@@ -9,7 +9,7 @@
 	BOOTDRV   db 0
 	DRVNO     db 0
 	NERRORS   db 0
-	BANNER    db "EnzOS bootloader v0.0.1", 0
+	BANNER    db "Custom bootloader", 0
 	LOADMSG   db "Loading OS...", 0
 	ERRMSG    db "Something went wrong...", 13, 10, 0
 	ETRYAGAIN db "Error reading disk... try again.", 13, 10, 0
