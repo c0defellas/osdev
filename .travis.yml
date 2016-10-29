@@ -1,4 +1,7 @@
 language: go
 
+before_install:
+  - apt-get install nasm gcc
+
 go:
   - 1.7
