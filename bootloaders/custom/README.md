@@ -55,7 +55,8 @@ fdisk mbr -create -bootcode bootloader.bin disk.raw
 
 And then copies the kernel to the second sector of disk using `dd` again.
 
-In the end, the disk and memory should have the layout below:
+In the end, the disk and memory should have the layout below (compare
+it to the source code):
 
          DISK LAYOUT                             MEMORY LAYOUT
                                                +-----------------+ -> 0x0500:0000 (kernel code seg)
