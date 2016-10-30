@@ -13,7 +13,7 @@
 
 	jmp start
 
-	BANNER db "Simple skeleton for an OS", 13, 10, 0
+	BANNER db "HACK THE PLANET!!!", 13, 10, 0
 
 	%include "common.asm"
 
