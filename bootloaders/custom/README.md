@@ -14,6 +14,8 @@ Features:
 
 It came with an example OS.
 
+![screenshot](./kernel.png)
+
 ## How the building works
 
 The script `make.sh` assembles the kernel, calculate the number of
