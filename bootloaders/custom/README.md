@@ -64,7 +64,7 @@ In the end, the disk and memory should have the layout below:
                                                         .
                                                         .
                                                         .
-    +-------------------+  ^                   +-----------------+ -> 0x07c0:0000 (entry point)
+    +-------------------+  ^                   +-----------------+ -> 0x07c0:0000 (bootloader entry point)
     |   Bootloader      |  |                   |    Bootloader   |
     |                   |  |                   |                 |
     |    446 bytes      |  |                   |                 |
