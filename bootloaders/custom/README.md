@@ -59,7 +59,7 @@ In the end, the disk and memory should have the layout below:
                                                +-----------------+ -> 0x0500:0000 (kernel code seg)
                                                |    1 3 3 7      | -> magic number
                                                |   Kernel code   | -> 0x0500:0004 (kernel entry point)
-                                               |                 | 
+                                               |                 |
                                                +-----------------+ -> 0x0500:(LOADNSECTORS * 512)
                                                         .
                                                         .
@@ -91,12 +91,13 @@ In the end, the disk and memory should have the layout below:
                                                |        .        |
                                                |        .        |
                                                +-----------------+ -> 0x07e0:ffff (top of stack)
-                                               
+
 ## Dependencies
 
 - nasm
 - coreutils >= 8.25
 - qemu
+- go
 
 ## Customizing
 
