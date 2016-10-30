@@ -56,9 +56,9 @@ And then copies the kernel to the second sector of disk using `dd` again.
 In the end, the disk and memory should have the layout below:
 
          DISK LAYOUT                             MEMORY LAYOUT
-                                               +-----------------+ -> 0x0500:0000 (kernel entry point)
-                                               |                 |
-                                               |   Kernel code   |
+                                               +-----------------+ -> 0x0500:0000 (kernel code seg)
+                                               |    1 3 3 7      | -> magic number
+                                               |   Kernel code   | -> 0x0500:0004 (kernel entry point)
                                                |                 | 
                                                +-----------------+ -> 0x0500:(LOADNSECTORS * 512)
                                                         .
@@ -82,8 +82,8 @@ In the end, the disk and memory should have the layout below:
     +-------------------+  |                   |                 |
     |      0x55AA       |  |                   |     0x55AA      |
     +-------------------+  v                   +-----------------+ -> 0x07e0:0000 (bottom of stack)
-    |   Kernel code     |                      |                 |
-    |                   |                      |    Stack of     |
+    |     1 3 3 7       | -> magic number      |                 |
+    |    Kernel code    |                      |    Stack of     |
     |                   |                      |  of bootloader  |
     +-------------------+                      |                 |
                                                |      64 kb      |
