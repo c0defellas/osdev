@@ -34,7 +34,7 @@ if $status != "0" {
 }
 
 # getnsectors returns the amount of block sectors needed to
-# fit the kernel
+# fit the kernel into
 fn getnsectors() {
 	sectsz = "0"
 
