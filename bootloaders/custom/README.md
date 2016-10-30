@@ -12,7 +12,7 @@ Features:
 - Load the OS from the second sector of disk;
 - Enable a20 line;
 
-It came with an example OS.
+The OS it boots only print a message:
 
 ![screenshot](./kernel.png)
 
