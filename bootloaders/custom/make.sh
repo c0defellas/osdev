@@ -88,8 +88,8 @@ fn makeDisk() {
 
 	setenv PATH
 
-	codesz    <= wc -c $KERNEL_BIN | cut -d " " -f1 | tr -d "\n"
-	seek      <= expr 512 "+" $codesz
+	codesz <= wc -c $KERNEL_BIN | cut -d " " -f1 | tr -d "\n"
+	seek   <= expr 512 "+" $codesz
 
 	dd "if="+$KERNEL_BIN "of="+$DISKIMG "oflag=seek_bytes" "seek=512" "bs="+$codesz "count=1"
 }
