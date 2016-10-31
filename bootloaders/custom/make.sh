@@ -5,8 +5,6 @@ IFS = ()
 # working directory
 wdir <= pwd | tr -d "\n"
 
-dd --version
-
 IFS            = ()
 ASFLAGS        = ("-fbin")
 BOOTLOADER_SRC = "bootloader.asm"
@@ -91,7 +89,6 @@ fn makeDisk() {
 	setenv PATH
 
 	codesz    <= wc -c $KERNEL_BIN | cut -d " " -f1 | tr -d "\n"
-	remaining <= -expr 512 "-" $codesz
 	seek      <= expr 512 "+" $codesz
 
 	dd "if="+$KERNEL_BIN "of="+$DISKIMG "oflag=seek_bytes" "seek=512" "bs="+$codesz "count=1"
