@@ -1,5 +1,7 @@
 # OSDEV group
 
+[![Join the chat at https://gitter.im/c0defellas/osdev](https://badges.gitter.im/c0defellas/osdev.svg)](https://gitter.im/c0defellas/osdev?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 The idea of this project is concentrate tools, documentations, design
 ideas, essays, discussions and so on, related to operating system
 development.
