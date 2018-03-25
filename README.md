@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/c0defellas/osdev.svg?branch=add-custom-bootloader-example)](https://travis-ci.org/c0defellas/osdev)
+
 # OSDEV group
 
 [![Join the chat at https://gitter.im/c0defellas/osdev](https://badges.gitter.im/c0defellas/osdev.svg)](https://gitter.im/c0defellas/osdev?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)

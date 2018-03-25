@@ -1,0 +1,9 @@
+sudo: required
+dist: trusty
+language: go
+
+before_install:
+  - sudo apt-get install nasm coreutils
+
+go:
+  - 1.7
